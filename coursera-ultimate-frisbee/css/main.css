@@ -1,0 +1,161 @@
+body, header, h1, h2, nav, main, aside, a, section, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #000000;
+  background-image: linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,.5),rgba(0,0,0,0)), url(http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 75px;
+  padding-left: 50px;
+  padding-top: 125px;
+
+}
+
+h1 {
+  color: #FEFEFF;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+nav {
+  display: inline-block;
+  height: auto;
+  padding: 5px;
+}
+
+nav a {
+  color: #FEFEFF;
+  border: 2px solid #FEFEFF;
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: .3em;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding: .3em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:focus {
+  background: #ffffff;
+  border: 2px solid #FEFEFF;
+  color: #000000;
+}
+
+nav a:hover {
+  background: #ffffff;
+  border: 2px solid #FEFEFF;
+  color: #000000;
+}
+
+.active {
+  background: #CE2029;
+  border: 2px solid #CE2029;
+  border-radius: 3px;
+  color: #FEFEFF;
+  font-weight: bold;
+  letter-spacing: .3em;
+  margin-right: 25px;
+  padding: .3em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.left {
+  background: #ebebeb;
+  display: inline-block;
+  margin: auto;
+  width: 25%;
+}
+
+img {
+  border: 10px solid #ffffff;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 75%;
+}
+
+.right {
+  display: inline-block;
+  padding-left: 2em;
+  vertical-align: top;
+  width: 50%;
+}
+
+h2 {
+  font-size: 36px;
+  padding-bottom: .5em;
+  padding-top: 1em;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {  
+  padding: 6px 15px;
+}
+
+th {
+  background-color: #292828;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* ---- table borders ---- */
+
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+
+/* table corner radius' */
+tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+ 
+tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+/* table striping */
+tr:nth-child(odd) {
+  background: #ebebeb;
+}
